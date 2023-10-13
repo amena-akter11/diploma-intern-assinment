@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+  <div class="container mt-3 mb-3">
+    <div class="card pr-5 pl-5">
+      <div class="card-body">
+        <div class="col-md-4">
+          <input type="search" name="search" placeholder="Search your information" class="text-center" size="25">
+        </div>
+        <form action="#" method="post" class="row g-3 needs-validation" novalidate>
+
+          <h2 class="text-center">HTML input tags and there type</h2>
+
+          <div class="col-md-4">
+            <label class="form-label">Name</label>
+            <input type="text" name="name" class="form-control">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">Password</label>
+            <input type="password" name="password" class="form-control">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">Email</label>
+            <input type="email" name="email" class="form-control">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">Enter your phone number</label> <br>
+            <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form-control">
+          </div>
+          <div class="col-md-4">
+            <label for="email">Enter your globex email:</label> <br>
+            <input type="email" id="email"pattern=".+@hmtmcse\.com">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">Choose your profession</label><br>
+            <select name="profession">
+                <option value="">Please choose an option</option>
+                <option value="student">Student</option>
+                <option value="jod holder">Job Holder</option>
+                <option value="doctor">Doctor</option>
+                <option value="software engineer">Software Engineer</option>
+                <option value="electrician">Electrician</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label for="camp-week">Choose a week:</label> <br>
+            <input type="week" name="week" id="camp-week" min="2018-W18" max="2018-W26">
+          </div>
+          <div class="col-md-4">
+            <label for="head">Choose your favourite color</label> <br>
+            <input type="color" name="head" value="#e66465">
+          </div>
+          <div class="col-md-4">
+            <label for="">Do you pray salah?</label>
+            <div>
+              <input type="checkbox" name="yes">
+              <label for="scales">Yes</label> <br>
+          </div>
+          <div>
+              <input type="checkbox" name="No">
+              <label for="horns">No</label> <br>
+          </div>
+          </div>
+          <div class="col-md-4">
+            <label for="meeting-time">What time is it now?</label> <br>
+        <input type="datetime-local" name="meeting-time" value="2018-06-12T19:30" min="2023-10-07T00:00" max="2018-10-14T00:00">
+          </div>
+          <div class="col-md-4">
+        <label for="start">Start date:</label> <br>
+        <input type="date" name="trip-start" min="2023-10-01" max="2023-12-31">
+          </div>
+          <div class="col-md-4">
+            <label c>Gender</label><br>
+            <input type="radio" name="male">
+            <label>Male</label> <br>
+            <input type="radio" name="female">
+            <label>Female</label> <br>
+          </div>
+          <div class="col-md-4">
+            <label for="volume">Experience in python</label> <br>
+            <input type="range" name="volume" min="0" max="11">
+          </div>
+          <div class="col-md-4">
+            <label for="url">Github account URL</label> <br>
+            <input type="url" name="url" id="url" pattern="https://.*" size="20">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">Upload your cv</label>
+            <input type="file" name="cv">
+          </div>
+          <div class="col-md-12">
+            <label class="form-label">Comment</label><br>
+            <textarea name="comment" class="form-control false">Write your comment</textarea>
+          </div><br>
+          <div class="col-md-4 middle">
+          </div>
+          <div class="col-md-4 middle">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <a href="#" type="button" class="btn btn-secondary">Log In</a>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
