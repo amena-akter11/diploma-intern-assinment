@@ -23,4 +23,4 @@ def registration():
     form = MemberForm()
     if form.is_valid_data_submit():
         flash("Valid data submitted", "success")
-    return ssr_ui_render(view_name="member/registration")
+    return ssr_ui_render(view_name="member/registration", form=form)
