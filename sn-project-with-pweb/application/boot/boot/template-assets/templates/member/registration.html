@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="{{ url_for('boot-static.static', filename='css/lib/bootstrap.min.css') }}">
+
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            
+                <form action="{{ url_for("auth_controller.registration") }}" method="post">
+                    <h1>Registration</h1>
+                    <div class="row">
+                    {% form_input field=form.firstname, wrapper="mb-3 col-md-6" %}
+                    {% form_input field=form.lastname, wrapper="mb-3 col-md-6" %}
+                    {% form_input field=form.email, wrapper="mb-3 col-md-6" %}
+                    {% form_input field=form.password, wrapper="mb-3 col-md-6" %}
+                    {% form_input field=form.dob, wrapper="mb-3 col-md-12" %}
+                    <div class="col-md-2">
+                        <button type="submit" class="btn btn-success">Register</button>
+                    </div>
+                </div>
+                </form>
+        </div>
+    </div>
+</div>
