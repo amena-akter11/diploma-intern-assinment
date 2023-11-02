@@ -10,6 +10,7 @@ auth_controller = Blueprint(
 )
 
 @auth_controller.route("/", methods=['GET'])
+
 @auth_controller.route("/login", methods=['GET', 'POST'])
 def login():
     form = MemberForm()
