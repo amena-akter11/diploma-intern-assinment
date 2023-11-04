@@ -19,6 +19,7 @@ class BootModule(PWebComponentRegister):
         pass
 
     def register_controller(self, pweb_app):
+        pweb_app.register_blueprint(auth_controller)
         pweb_app.register_blueprint(home_controller)
         pweb_app.register_blueprint(boot_static_controller)
-        pweb_app.register_blueprint(auth_controller)
+
